@@ -15,6 +15,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void stationValueAboveMax() {
         Radio station = new Radio();
@@ -39,6 +40,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void goToPrevStation() {
         Radio station = new Radio();
@@ -53,7 +55,7 @@ public class RadioTest {
     }
 
     @Test
-    public  void stationNumberExceededMax() {
+    public void stationNumberExceededMax() {
         Radio station = new Radio();
 
         station.setCurrentStation(9);
@@ -64,8 +66,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void stationNumberBelowMin() {
+    public void stationNumberBelowMin() {
         Radio station = new Radio();
 
         station.setCurrentStation(0);
@@ -89,6 +92,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void volumeIncreaseAboveMax() {
         Radio volume = new Radio();
@@ -101,6 +105,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void volumeDownAllowed() {
         Radio volume = new Radio();
@@ -113,6 +118,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void decreaseVolumeBelowMin() {
         Radio volume = new Radio();
