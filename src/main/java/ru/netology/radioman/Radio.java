@@ -6,11 +6,9 @@ public class Radio {
     private int currentStation = minStation;
 
 
-
     private int maxVolume = 100;
     private int minVolume = 0;
     private int volumeControl;
-
 
 
     public Radio() {
@@ -24,6 +22,7 @@ public class Radio {
     public int getCurrentStation() {
         return currentStation;
     }
+
     public int getMaxStation() {
         return maxStation;
     }
@@ -60,6 +59,7 @@ public class Radio {
     public void setVolumeControl(int newVolumeControl) {
         volumeControl = newVolumeControl;
     }
+
     public void volumeUp() {
         if (volumeControl < maxVolume) {
             volumeControl = volumeControl + 1;
@@ -67,6 +67,7 @@ public class Radio {
             return;
         }
     }
+
     public void volumeDown() {
         if (volumeControl > minVolume) {
             volumeControl = volumeControl - 1;
