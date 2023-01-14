@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="19f1a7f3-571d-4521-8bef-d3d811a5e0c0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/radioman/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/radioman/Radio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/radioman/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/radioman/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +54,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RadioTest.stationBelowMinimum">
     <configuration name="RadioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Radio" />
       <extension name="coverage">
@@ -68,8 +70,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RadioTest.stationBelowMinimum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Radio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.radioman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.radioman" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.radioman.RadioTest" />
+      <option name="METHOD_NAME" value="stationBelowMinimum" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioTest.stationValueAboveMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Radio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.radioman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.radioman" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.radioman.RadioTest" />
+      <option name="METHOD_NAME" value="stationValueAboveMax" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RadioTest.stationBelowMinimum" />
+        <item itemvalue="JUnit.RadioTest.stationValueAboveMax" />
         <item itemvalue="JUnit.RadioTest" />
       </list>
     </recent_temporary>

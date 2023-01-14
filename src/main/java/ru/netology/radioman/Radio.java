@@ -2,17 +2,30 @@ package ru.netology.radioman;
 
 public class Radio {
     private int currentStation;
+    private int volumeControl;
 
     public int getCurrentStation() {
         return currentStation;
+    }
+
+    public int getVolumeControl() {
+        return volumeControl;
     }
 
     public void setCurrentStation(int newCurrentStation) {
         if (newCurrentStation > 9) {
             return;
         }
+        if (newCurrentStation < 0) {
+            return;
+        }
         currentStation = newCurrentStation;
     }
+
+    public void setVolumeControl(int newVolumeControl) {
+        volumeControl = newVolumeControl;
+    }
+
 
     public void nextStation() {
         currentStation = currentStation + 1;
@@ -26,16 +39,6 @@ public class Radio {
         if (currentStation < 0) {
             currentStation = 9;
         }
-    }
-
-    private int volumeControl;
-
-    public int getVolumeControl() {
-        return volumeControl;
-    }
-
-    public void setVolumeControl(int newVolumeControl) {
-        volumeControl = newVolumeControl;
     }
 
     public void volumeUp() {

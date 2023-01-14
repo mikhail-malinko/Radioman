@@ -20,7 +20,19 @@ public class RadioTest {
     public void stationValueAboveMax() {
         Radio station = new Radio();
 
-        station.setCurrentStation(15);
+        station.setCurrentStation(10);
+
+        int expected = 0;
+        int actual = station.getCurrentStation();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void stationBelowMinimum() {
+        Radio station = new Radio();
+
+        station.setCurrentStation(-1);
 
         int expected = 0;
         int actual = station.getCurrentStation();
